@@ -76,7 +76,7 @@
     "home": "https://wallstreetcn.com/",
     "color": "blue",
     "interval": 300000,
-    "title": "实时快讯"
+    "title": "快讯"
   },
   "wallstreetcn-quick": {
     "name": "华尔街见闻",
@@ -85,7 +85,7 @@
     "home": "https://wallstreetcn.com/",
     "color": "blue",
     "interval": 300000,
-    "title": "实时快讯"
+    "title": "快讯"
   },
   "wallstreetcn-news": {
     "name": "华尔街见闻",
@@ -93,7 +93,7 @@
     "home": "https://wallstreetcn.com/",
     "color": "blue",
     "interval": 1800000,
-    "title": "最新资讯"
+    "title": "最新"
   },
   "wallstreetcn-hot": {
     "name": "华尔街见闻",
@@ -102,7 +102,7 @@
     "home": "https://wallstreetcn.com/",
     "color": "blue",
     "interval": 1800000,
-    "title": "最热文章"
+    "title": "最热"
   },
   "36kr": {
     "redirect": "36kr-quick",
@@ -198,7 +198,7 @@
     "home": "https://bbs.pcbeta.com",
     "color": "blue",
     "interval": 300000,
-    "title": "Windows 11"
+    "title": "Win11"
   },
   "pcbeta-windows11": {
     "name": "远景论坛",
@@ -207,7 +207,7 @@
     "home": "https://bbs.pcbeta.com",
     "color": "blue",
     "interval": 300000,
-    "title": "Windows 11"
+    "title": "Win11"
   },
   "cls": {
     "redirect": "cls-telegraph",
@@ -472,5 +472,23 @@
     "color": "green",
     "interval": 1800000,
     "title": "最热"
+  },
+  "douban": {
+    "title": "热门电影",
+    "name": "豆瓣",
+    "type": "hottest",
+    "column": "china",
+    "home": "https://www.douban.com",
+    "color": "green",
+    "interval": 600000
+  },
+  "steam": {
+    "title": "在线人数",
+    "name": "Steam",
+    "type": "hottest",
+    "column": "world",
+    "home": "https://store.steampowered.com",
+    "color": "blue",
+    "interval": 600000
   }
 }

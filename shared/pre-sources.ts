@@ -78,14 +78,14 @@ export const originSources = {
       quick: {
         type: "realtime",
         interval: Time.Fast,
-        title: "实时快讯",
+        title: "快讯",
       },
       news: {
-        title: "最新资讯",
+        title: "最新",
         interval: Time.Common,
       },
       hot: {
-        title: "最热文章",
+        title: "最热",
         type: "hottest",
         interval: Time.Common,
       },
@@ -171,7 +171,7 @@ export const originSources = {
     home: "https://bbs.pcbeta.com",
     sub: {
       windows11: {
-        title: "Windows 11",
+        title: "Win11",
         type: "realtime",
         interval: Time.Fast,
       },
@@ -413,6 +413,22 @@ export const originSources = {
       },
     },
   },
+  "douban": {
+    name: "豆瓣",
+    column: "china",
+    title: "热门电影",
+    color: "green",
+    type: "hottest",
+    home: "https://www.douban.com",
+  },
+  "steam": {
+    name: "Steam",
+    column: "world",
+    title: "在线人数",
+    color: "blue",
+    type: "hottest",
+    home: "https://store.steampowered.com",
+  },
 } as const satisfies Record<string, OriginSource>
 
 export function genSources() {
@@ -461,10 +477,8 @@ export function genSources() {
     _.filter(([_, v]) => {
       if (v.disable === "cf" && process.env.CF_PAGES) {
         return false
-      } else if (v.disable === true) {
-        return false
       } else {
-        return true
+        return v.disable !== true
       }
     }),
   )
